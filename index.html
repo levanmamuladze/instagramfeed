@@ -15,171 +15,180 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row p-3">
-      <div class="col-md-6">
-        <a class="navbar-brand fs-3"><i class="fa-brands fa-instagram fs-2"></i> Instagram</a>
-      </div>
-      <div class="col-md-6 d-flex justify-content-end  ">
-        <button type="button" class="btn btn-success me-3 " data-bs-toggle="modal" data-bs-target="#exampleModal"
-          data-bs-whatever="@mdo" text-left>Creat a new post</button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Creat a new post</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="">
-                    <label for="message-text" class="col-form-label"><strong>Caption:</strong></label>
-                    <textarea class="form-control" id="message-text" placeholder="Wright your caption"></textarea>
-                    <div>
-                      <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
-                      <button type="button" class="btn btn-light"><i
-                          class="fa-sharp fa-solid fa-location-dot"></i></button>
-                    </div>
+
+  <div class="container ">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand fs-3" href="#">
+        <i class="fa-brands fa-instagram fs-2"></i>
+        Instagram
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button type="button" class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              data-bs-whatever="@mdo">Create a new post</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-success">Publish</button>
+                  <div class="modal-body">
+                    <form>
+                      <div class="">
+                        <label for="message-text" class="col-form-label"><strong>Caption:</strong></label>
+                        <textarea class="form-control" id="message-text" placeholder="Write your caption"></textarea>
+                        <div>
+                          <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                          <button type="button" class="btn btn-light"><i
+                              class="fa-sharp fa-solid fa-location-dot"></i></button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <form class="d-flex " role="search">
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               <i class="fa-solid fa-gear"></i>
-            </button>
-            <ul class="dropdown-menu">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Accessability</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
               <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
               <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
             </ul>
-          </div>
+          </li>
+        </ul>
       </div>
-    </div>
-
-  </div>
-  <ul class="nav nav-tabs justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link active" data-bs-toggle="tab" href="#gallery" style="border: none;"><i
-          class="fa-solid fa-table-cells" style="color: black;"></i></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="tab" href="#feed" style="border: none;"><i class="fa-solid fa-square"
-          style="color: black;"></i></a>
-    </li>
-  </ul>
-  <div class="tab-content">
-    <div id="gallery" class="container tab-pane in active">
-      <div class="row  justify-content-around pt-3">
-        <div class="col-md  ">
-          <img src="https://picsum.photos/id/13/500/267" alt="movie img" class="img-fluid">
-        </div>
-        <div class="col-md">
-          <img src="https://picsum.photos/id/14/500/267" alt="movie img" class="img-fluid">
-        </div>
-        <div class="col-md">
-          <img src="https://picsum.photos/id/15/500/267" alt="movie img" class="img-fluid">
-        </div>
-      </div>
-      <div class="row  justify-content-around pt-3">
-        <div class="col-md ">
-          <img src="https://picsum.photos/id/20/500/267" alt="movie img" class="img-fluid">
-        </div>
-        <div class="col-md">
-          <img src="https://picsum.photos/id/18/500/267" alt="movie img" class="img-fluid">
-        </div>
-        <div class="col-md">
-          <img src="https://picsum.photos/id/19/500/267" alt="movie img" class="img-fluid">
-        </div>
-      </div>
-      <div class="row  justify-content-around pt-3 ">
-        <div class="col-md">
-          <img src="https://picsum.photos/id/20/500/267" alt="movie img" class="img-fluid">
-        </div>
-        <div class="col-md">
-          <img src="https://picsum.photos/id/18/500/267" alt="movie img" class="img-fluid">
-        </div>
-        <div class="col-md">
-          <img src="https://picsum.photos/id/25/500/267" alt="movie img" class="img-fluid">
-        </div>
-      </div>
-
-    </div>
-  </div>
-  </div>
-  <div id="feed" class="tab-pane fade pt-2">
-    <div class="container pt-2 ">
-      <div class="row w-50 mx-auto">
-        <div class="col-md">
-          <div class="card">
-            <div class="card-header d-flex justify-content-between">
-              <div class="fs-5">My morning desk..Lots to do!</div>
-              <div>02/26</div>
-            </div>
-            <img src="https://picsum.photos/id/9/367/267" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="card-text fw-bold">204 likes</div>
-              <div class="card-text">Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container pt-2">
-      <div class="row w-50 mx-auto">
-        <div class="col-md">
-          <div class="card">
-            <div class="card-header d-flex justify-content-between">
-              <div class="fs-5">A nice view</div>
-              <div>06/07</div>
-            </div>
-            <img src="https://picsum.photos/id/12/367/267" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="card-text fw-bold">430 likes</div>
-              <div class="card-text">Take me to the ocean. Let me sail the open sea. To breathe the warm and salty air and dream of things to be.</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="container pt-2">
-      <div class="row w-50 mx-auto">
-        <div class="col-md ">
-          <div class="card">
-            <div class="card-header d-flex justify-content-between">
-              <div class="fs-5">When the sea touchs the forest...</div>
-              <div>12/04</div>
-            </div>
-            <img src="https://picsum.photos/id/13/367/267" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="card-text fw-bold">204 likes</div>
-              <div class="card-text">At night, when the sky is full of stars and the sea is still you get the wonderful sensation that you are floating in space.”</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-
-
-
     </nav>
 
+
+
+    <div class="container ">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6 ">
+          <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#gallery" style="border: none;"><i
+                  class="fa-solid fa-table-cells" style="color: black;"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#feed" style="border: none;"><i class="fa-solid fa-square"
+                  style="color: black;"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content">
+      <div id="gallery" class="container tab-pane in active ">
+        <div class="row pt-3">
+          <div class="col-md-4 mb-3">
+            <img src="https://picsum.photos/id/13/500/267" alt="movie img" class="img-fluid">
+          </div>
+          <div class="col-md-4 mb-3">
+            <img src="https://picsum.photos/id/14/500/267" alt="movie img" class="img-fluid">
+          </div>
+          <div class="col-md-4 mb-3">
+            <img src="https://picsum.photos/id/15/500/267" alt="movie img" class="img-fluid">
+          </div>
+          <div class="col-md-4 mb-3">
+            <img src="https://picsum.photos/id/20/500/267" alt="movie img" class="img-fluid">
+          </div>
+          <div class="col-md-4 mb-3">
+            <img src="https://picsum.photos/id/18/500/267" alt="movie img" class="img-fluid">
+          </div>
+          <div class="col-md-4 mb-3">
+            <img src="https://picsum.photos/id/19/500/267" alt="movie img" class="img-fluid">
+          </div>
+          <div class="col-md-4 mb-3">
+            <img src="https://picsum.photos/id/20/500/267" alt="movie img" class="img-fluid">
+          </div>
+          <div class="col-md-4 mb-3">
+            <img src="https://picsum.photos/id/18/500/267" alt="movie img" class="img-fluid">
+          </div>
+          <div class="col-md-4 mb-3">
+            <img src="https://picsum.photos/id/25/500/267" alt="movie img" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="feed" class="tab-pane show  ">
+        <div class="container pt-2 d-flex justify-content-center flex-column align-items-center">
+          <div class="row pt-2 mx-auto w-50">
+            <div class="col-sm-12 col-md">
+              <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                  <div class="fs-5">My morning desk..Lots to do!</div>
+                  <div>02/26</div>
+                </div>
+                <img src="https://picsum.photos/id/9/367/267" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <div class="card-text fw-bold">204 likes</div>
+                  <div class="card-text">Learn as if you will live forever, live like you will die tomorrow.” — Mahatma
+                    Gandhi</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-2 mx-auto w-50">
+            <div class="col-sm-12 col-md">
+              <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                  <div class="fs-5">A nice view</div>
+                  <div>06/07</div>
+                </div>
+                <img src="https://picsum.photos/id/12/367/267" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <div class="card-text fw-bold">430 likes</div>
+                  <div class="card-text">Take me to the ocean. Let me sail the open sea. To breathe the warm and salty
+                    air
+                    and dream of things to be.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-2 mx-auto w-50">
+            <div class="col-sm-12 col-md">
+              <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                  <div class="fs-5">When the sea touches the forest...</div>
+                  <div>12/04</div>
+                </div>
+                <img src="https://picsum.photos/id/13/367/267" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <div class="card-text fw-bold">204 likes</div>
+                  <div class="card-text">At night, when the sky is full of stars and the sea is still you get the
+                    wonderful
+                    sensation that you are floating in space.”</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
   </div>
 
 
